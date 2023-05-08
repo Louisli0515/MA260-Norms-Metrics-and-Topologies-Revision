@@ -98,3 +98,46 @@ A metric $d$ on a set $X$ is a map $d:X\times X\to\mathbb{R}^{+}$ such that
 
 * A subset $U$ of $(X,d)$ is ***open*** in $X$ if for every $x\in U$, there exists $\varepsilon > 0$ such that $\mathbb{B}(x,\varepsilon)\subset U$.
 * A subset $F$ of $(X,d)$ is ***closed*** in $X$ if $X\setminus F$ is open.
+* Open balls are open.
+* If $U_{1},...,U_{n}$ are open in $(X,d)$, then $\displaystyle\bigcap_{i=1}^{n} U_{i}$ is open in $(X,d)$.
+* If $F_{1},...,F_{n}$ are closed in $(X,d)$, then $\displaystyle\bigcup_{i=1}^{n} F_{i}$ is closed in $(X,d)$.
+* If $\set{U_{i}:i\in\mathcal{I}}$ is any collection of sets that are open in $(X,d)$, where $\mathcal{I}$ is any index set, then $U = \displaystyle\bigcup_{i\in\mathcal{I}} U_{i}$ is open in $(X,d)$.
+* If $\set{F_{i}: i\in\mathcal{I}}$ is any collection of closed sets in $(X,d)$ then $\displaystyle\bigcap_{i\in\mathcal{I}} F_{i}$ is closed in $(X,d)$.
+
+### Convergence of sequences
+
+#### Convergence
+
+* A sequence $(x_{n})_{n=1}^{\infty} in $(X,d)$ converges to $x\in X$ if $$\lim_{n\to\infty} d(x_{n},x) = 0,$$ in terms of open balls this can be phrased as for every $\varepsilon > 0$ there exists $N\geq 1$ such that $$x_{n}\in\mathbb{B}(x,\varepsilon)$$ for all $n\geq N$.
+* A subset $F$ of a metric space is closed if and only if whenever a sequence $(x_{n})_{n=1}^{\infty}$ contained in $F$ converges to some $x\in X$, it follows that $x\in F$.
+
+### Continuity 
+
+* Let $(X,d_{X})$ and $(Y,d_{Y})$ be metric spaces and let $f:X\to Y$ be a function. For $p\in X$, we say that $\displaystyle\lim_{x\to p}f(x) = y\in Y$ if for every $\varepsilon > 0$ there exists $\delta > 0$ such that $$0 < d_{X}(X, p) < \delta\implies d_{Y}(f(x),y) < \varepsilon. $$
+
+* Let $(X, d_{X})$ and $(Y, d_{Y})$ be metric spaces and let $f: X\to Y$ be a function. Then $f$ is ***continuous*** at $p\in X$ if $\displaystyle\lim_{x\to p}f(x) = f(p)$, i.e. if for every $\varepsilon > 0$ there exists a $\delta > 0$ such that $$d_{X}(x, p) < \delta\implies d_{Y}(f(x), f(p)) < \varepsilon.$$
+* It is ***continuous*** on $X$ if it is continuous at every point of $X$.
+
+* A function $f:X\to Y$ is ***Lipschitz continuous*** or just ***Lipschitz*** if there exists $C\geq 0$ such that $$d_{Y}(f(x),f(y))\leq Cd_{X}(x,y)$$ for every $x,y\in X$.
+
+* Let $(X,d_{X})$ and $(Y,d_{Y})$ be metric spaces. A function $f:X\to Y$ is continuous if and only if for any open set $U\subset Y, f^{-1}(U)$ is open in $X$.
+
+### Topologically equivalence
+
+Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following statements are equivalent:
+
+* every set that is open in $(X,d_{2})$ is open in $(X,d_{1})$;
+* for any metric space $(Y,d_{Y})$, if $g:X\to Y$ is continuous from $(X,d_{2})$ into $(Y,d_{Y})$, then $g$ is continuous from $(X,d_{1})$ into $(Y,d_{Y})$ and 
+* for any metric space $(Y,d_{Y})$, if $f:Y\to X$ is continuous from $(Y,d_{Y})$ into $(X,d_{1})$ then $f$ is continuous from $(Y,d_{Y})$ into $(X,d_{2})$.
+
+
+Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following statements are equivalent:
+
+* the open sets in $(X,d_{1})$ and $(X,d_{2})$ coincide;
+* for any metric space $(Y,d_{Y})$, a function $g:X\to Y$ is continuous from $(X,d_{1})$ into $(Y,d_{Y})$ if and only if $g$ is continuous from $(X,d_{2})$ into $(Y,d_{Y})$;
+* for any metric space $(Y,d_{Y})$, a function $f:Y\to X$ is continuous from $(Y,d_{Y})$ into $(X,d_{1})$ if and only if $f$ is continuous from $(Y,d_{Y})$ into $(X,d_{2})$.
+
+#### Topologically equivalent
+
+* Two metrics $d_{1}$ and $d_{2}$ on $X$ are called ***topologically equivalent*** or just ***equivalent*** if the open setes in $(X,d_{1})$ and $(X,d_{2})$ coincide.
+* Two metrics $d_{1}$ and $d_{2}$ on $X$ are called ***Lipschitz equivalent*** if there exists $0 < c\leq C < \infty$ such that $$cd_{1}(x,y)\leq d_{2}(x,y)\leq Cd_{1}(x,y)$$ for all $x,y\in X$.
