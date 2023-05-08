@@ -60,3 +60,41 @@ For all $1\leq p\leq\infty$, if $x,y\in l^{p}$ then $x+y\in l^{p}$ and $$\left\|
 #### $L^{p}$ space
 
 * For $p\in [1,\infty)$, set $$\left\|f\right\|_ {L^{p}} = \left(\int_{a}^{b}\left|f(x)\right|^{p}\mathrm{d}x\right)^{1/p}.$$
+
+### Metric space
+
+A metric $d$ on a set $X$ is a map $d:X\times X\to\mathbb{R}^{+}$ such that 
+
+* $d(x,y) = 0$ if and only if $x = y$.
+* $d(x,y) = d(y,x)$ for every $x,y\in X$ and 
+* $d(x,z)\leq d(x,y)+d(y,z)$ for every $x,y,z\in X$ (triangle inequality).
+
+#### Standard metric/Euclidean metric
+
+* The standard metric or Euclidean metric on $\mathbb{R}^{n}$ is given by $$d_{2}(x,y) = \left\|x-y\right\|_ {l^{2}} = \left(\sum_{j=1}^{n}\left|x_{j}-y_{j}\right|^{2}\right)^{1/2}.$$
+
+#### Discrete metric 
+
+* The ***Discrete metric*** on any non-empty set $X$ is defined by setting $d(x,x) = 0$ and $d(x,y) = 1$ if $x\ne y$. (Useful in counterexamples)
+
+#### Sunflower metric 
+
+* The ***Sunflower metric*** on $\mathbb{R}^{2}$ is given by $d(x,y) = \left\|x-y\right\|$ if $x$ and $y$ lie on same line through the origin, and $\left\|x\right\|+\left\|y\right\|$ otherwise.
+
+#### Jungle river metric
+
+* The ***Jungle river metric*** on $\mathbb{R}^{2}$ is given by $d((x_{1},y_{1}),(x_{2},y_{2})) = \left|y_{1}-y_{2}\right|$ if $x_{1}= x_{2}$ and $d((x_{1},y_{1}),(x_{2},y_{2})) = \left|y_{1}\right|+\left|x_{1}-x_{2}\right|+\left\|y_{2}\right\|$ otherwise.
+
+### Open and closed sets
+
+* The ***Open ball*** centred at $a\in X$ of radius $r$ is the set $$\mathbb{B}(a,r) = \set{x\in X: d(x,a) < r}.$$
+* The ***Closed ball*** centred at $a\in X$ of radius $r$ is the set $$\overline{\mathbb{B}}(a,r) = \set{x\in X: d(x,a)\leq r}.$$
+
+#### Bounded subsets
+
+* A subset $S$ of $(X,d)$ is ***bounded*** if there exists $a\in X$ and $r > 0$ such that $S\subset\mathbb{B}(a,r)$.
+
+#### Open and closed subsets
+
+* A subset $U$ of $(X,d)$ is ***open*** in $X$ if for every $x\in U$, there exists $\varepsilon > 0$ such that $\mathbb{B}(x,\varepsilon)\subset U$.
+* A subset $F$ of $(X,d)$ is ***closed*** in $X$ if $X\setminus F$ is open.
