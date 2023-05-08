@@ -199,3 +199,5 @@ If $\mathcal{B}$ is any basis for $\mathcal{T}$, then
 
 * $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that \displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {T}}\mathbb{B} = T);
 * If $\mathbb{B}_ {1},\mathbb{B}_ {2}\in\mathcal{B}$, then $\mathbb{B}_ {1}\cap\mathbb{B}_ {2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}}\mathbb{B} = \mathbb{B}_ {1}\cap\mathbb{B}_ {2}$.
+
+A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
