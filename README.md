@@ -141,3 +141,61 @@ Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following stat
 
 * Two metrics $d_{1}$ and $d_{2}$ on $X$ are called ***topologically equivalent*** or just ***equivalent*** if the open setes in $(X,d_{1})$ and $(X,d_{2})$ coincide.
 * Two metrics $d_{1}$ and $d_{2}$ on $X$ are called ***Lipschitz equivalent*** if there exists $0 < c\leq C < \infty$ such that $$cd_{1}(x,y)\leq d_{2}(x,y)\leq Cd_{1}(x,y)$$ for all $x,y\in X$.
+
+#### Equivalent norms
+
+* The metrics induced by equivalent norms are topologically equivalent.
+* If $X$ is a vector space and two norms $\left\|\cdot\right\|_ {1}$ and $\left\|\cdot\right\|_ {2}$ on $X$ induce ***topologically equivalent metrics*** then the norms are equivalent.
+
+### Isometries and homeomorphisms
+
+* Suppose that $f:X\to Y$ is a bijection such that $$d_{Y}(f(x),f(y)) = d_{X}(x,y)$$ for all $x,y\in X$. Then $f$ is called an ***isometry*** between $X$ and $Y$. It preserves the distance between points, so $X$ and $Y$ are the same as metric spaces. We say that $X$ and $Y$ are ***isometric***.
+
+* If $f:X\to Y$ is a bijection and both $f$ and $f^{-1}$ are continuous, we say that $f$ is a homeomorphism and that $X$ and $Y$ are ***homeomorphic***.
+
+### Topological properties I
+
+If some property $P$ of a metric space is such that if $(X,d)$ has property $P$, then so does every metric space that is homeomorphic to $(X,d)$ we say that $P$ is a ***topological property***.
+
+Examples of topological properties:
+
+* $X$ is open in $X$; $X$ is closed in $X$.
+* $X$ is finite; countably infinite or uncountable.
+* Every continuous real-valued function on $X$ is bounded.
+
+Examples of properties that are not topological:
+
+* $X$ is bounded.
+* $X$ is totally bounded: for each $r > 0$ there exists a finite set  $F$ such that every ball of radius $r$ contains a point of $F$.
+
+### Topological Spaces
+
+#### Definition of a topology
+
+A ***topology*** $\mathcal{T}$ on a set $T$ is a collection of subsets of $T$, which we agree to call the "open sets", such that 
+* $T$ and $emptyset$ are open;
+* the intersection of finitely many open sets is open; and
+* arbitrary unions of open sets are open.
+
+The pair $(T,\mathcal{T})$ is called a ***topological space***.
+
+#### Definition of finer and coarser
+
+* If $\mathcal{T}_ {1}$ and $\mathcal{T}_ {2}$ are two topologies on $T$ then we say that $\mathcal{T}_ {1}$ is ***coarser*** than $\mathcal{T}_ {2}$ if $\mathcal{T}_ {1}\subset \mathcal{T}_ {2}$, i.e. $\mathcal{T}_ {1}$ contains "fewer" open sets than $\mathcal{T}_ {2}$. In this situation, we also say that $\mathcal{T}_ {2}$ is ***finer*** than $\mathcal{T}_ {1}$. 
+
+#### Closed topological space
+
+A subset of a topological space $T$ is closed if its complement is open. Using De Morgan's laws, the collection $\mathcal{F}$ of all closed sets satisfies 
+
+* $T$ and $\emptyset$ are closed.
+* the union of finitely many closed sets is closed; and
+* arbitrary intersections of closed sets are closed.
+
+### Bases and sub-bases
+
+A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$, i.e. for all $U\in\mathcal{T}$, there exists $\mathcal{C}_ {U}\subset\mathcal{B}$ such that $U = \displaystyle\bigcup_{\mathbb{B}\in\mathcal{C} _{U}}\mathbb{B}$.
+
+If $\mathcal{B}$ is any basis for $\mathcal{T}$, then 
+
+* $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that \displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {T}}\mathbb{B} = T);
+* If $\mathbb{B}_ {1},\mathbb{B}_ {2}\in\mathcal{B}$, then $\mathbb{B}_ {1}\cap\mathbb{B}_ {2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}}\mathbb{B} = \mathbb{B}_ {1}\cap\mathbb{B}_ {2}$.
