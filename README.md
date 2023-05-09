@@ -252,3 +252,30 @@ A subset $A$ of $T$ is
 * ***dense*** in $T$ if $\overline{A} = T$;
 * ***nowhere dense*** in $T$ if $(\overline{A})^{\circ} = \emptyset$;
 * ***meagre*** in $T$ if it is a union of a countable number of nowhere dense sets.
+
+### The Hausdorff property and metrisability
+
+* A topological space $(T,\mathcal{T})$ is ***metrisable*** if there is a metric $d$ on $T$ such that $\mathcal{T}$ consists of the open sets in $(T,d)$.
+* A sequence $(x_{n})^{\infty}_ {n=1}$ in a topological space $T$ converges to $x$ if for every open neighbourhood $U$ of $x$ there exists $N\geq 1$ such that $x_{n}\in U$ for all $n\geq N$.
+* A topological space $T$ is ***Hausdorff*** if for any two distinct $x,y\in T$, there exist disjoint open sets $U,V$ such that $x\in U$ and $y\in V$.
+* In a Hausdorff space $T$, any sequence has ***at most*** one limit.
+
+### Continuity between topological spaces
+
+* A map $f:T_{1}\to T_{2}$ between two topological spaces $(T,\mathcal{T}_ {1})$ and $(T_{2},\mathcal{T}_ {2})$ is ***continuous*** if whenever $U\subset T_{2}$ is open, $f^{-1}(U)$ is open in $T_{1}$. (i.e. if $U\in\mathcal{T}_ {2}$, then $f^{-1}(U)\in\mathcal{T}_ {1}$).
+* Suppose that $f:T_{1}\to T_{2}$ is a map between two topological spaces $(T_{1},\mathcal{T}_ {1})$ and $(T_{2},\mathcal{T}_ {2})$, and that $\mathcal{B}$ is a sub-basis for the topology $\mathcal{T}_ {2}$. Then $f$ is ***continuous*** if and only if $f^{-1}(B)$ is open in $T_{1}$ for every $B\in\mathcal{B}$.
+
+### Basic properties
+
+#### Transitivity of continuity
+
+* If $(T_{1}, \mathcal{T}_ {1})$, $(T_{2},\mathcal{T}_ {2})$ and $(T_{3}, \mathcal{T}_ {3})$ are topological spaces and $f: T_{1}\to T_{2}$ and $g: T_{2}\to T_{3}$ are ***continuous***, then $g\circ f: T_{1}\to T_{3}$ is ***continuous***.
+
+#### Projection continuity
+
+* For $j = 1,2$, the projection $\pi_{j}: T_{1}\times T_{2}\to T_{j}$ is ***continuous***.
+* Let $(T,\mathcal{T}), (T_{1},\mathcal{T}_ {1})$ and $(T_{2},\mathcal{T}_ {2})$ be topological spaces. A map $f = (f_{1},f_{2}):T\to T_{1}\times T_{2}$ is ***continuous*** if and only if $f_{1}$ and $f_{2}$ are ***both continuous***. (i.e. $\pi_{1}\circ f$ and $\pi_{2}\circ f$ are continuous).
+
+#### Additivity, product and division continuity
+
+* If $f,g:T\to\mathbb{R}$ are ***continuous***, then so are $f+g, fg$ and $f/g$ is ***continuous*** on the set $\set{x\in T: g(x)\ne 0}$.
