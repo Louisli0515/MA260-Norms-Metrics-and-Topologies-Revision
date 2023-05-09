@@ -201,3 +201,27 @@ If $\mathcal{B}$ is any basis for $\mathcal{T}$, then
 * If $\mathbb{B}_ {1},\mathbb{B}_ {2}\in\mathcal{B}$, then $\mathbb{B}_ {1}\cap\mathbb{B}_ {2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}}\mathbb{B} = \mathbb{B}_ {1}\cap\mathbb{B}_ {2}$.
 
 A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
+
+### Subspaces and finite product spaces
+
+#### Subspace topology
+
+* If $(T,\mathcal{T})$ is a topological space and $S\subset T$, then the ***subspace topology*** on $S$ is $$\mathcal{T}_ {S} = \set{U\cap S:U\in\mathcal{T}}.$$ We call $(S,\mathcal{T}_ {S})$ a topological subspace of $T$.
+
+#### Product topological spaces
+
+* Suppose that $(T_{1},\mathcal{T}_ {1})$ and $(T_{2}, \mathcal{T}_ {2})$ are two topological spaces. Then the ***product topology*** on $T_{1}\times T_{2}$ is the topology $\mathcal{T}$ with basis $$\mathcal{B} = \set{U_{1}\times U_{2}: U_{1}\in\mathcal{T}_ {1}, U_{2}\in\mathcal{T}_ {2}}.$$ We call $(T_{1}\times T_{2}, \mathcal{T})$ the topological product of $T_{1}$ and $T_{2}$.
+
+### Closure, interior and boundary
+
+* A neighbourhood of $x\in T$ is a set $H\subset T$ such that $x\in U\subset H$ for some $U\in\mathcal{T}$. An ***open neighbourhood*** of $x\in T$ is an open set $U$ that contains $x$.
+
+#### Closure
+
+* The ***closure*** $\overline{A}$ of a set $A\subset T$ is the intersection of all closed sets that contain $A$.
+* The closure of $A$, $\overline{A}$ is the set $$\overline{A} = \set{x\in T:U\cap A\ne\emptyset\text{for every open set U that contains x}} = \set{x\in T:\text{every neighbourhood of x intersects A}}.$$
+* If $X$ is a metric space and $A\subset X$ then $$\overline{A} = \set{\text{limits of convergent sequences in A}}.$$
+
+#### Interior
+
+* The ***interior*** of $A$, $A^{\circ]$, is the union of all open subsets of $A$.
