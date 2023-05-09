@@ -122,6 +122,10 @@ A metric $d$ on a set $X$ is a map $d:X\times X\to\mathbb{R}^{+}$ such that
 
 * Let $(X,d_{X})$ and $(Y,d_{Y})$ be metric spaces. A function $f:X\to Y$ is continuous if and only if for any open set $U\subset Y, f^{-1}(U)$ is open in $X$.
 
+#### Continuity and open/close sets
+
+* If $f:\mathbb{R}^{n}\to\mathbb{R}^{k}$ is continuous at all points of $\mathbb{R}^{n}$, then for all open subsets $V$ of $\mathbb{R}^{k}$, $f^{-1}(V)$ is open; for all closed subsets $\mathcal{F}$ of $\mathbb{R}^{k}$, $f^{-1}(\mathcal{F})$ is closed.
+
 ### Topologically equivalence
 
 Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following statements are equivalent:
