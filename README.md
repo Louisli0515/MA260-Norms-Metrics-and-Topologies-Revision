@@ -224,4 +224,27 @@ A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{
 
 #### Interior
 
-* The ***interior*** of $A$, $A^{\circ]$, is the union of all open subsets of $A$.
+* The ***interior*** of $A$, $A^{\circ}$, is the union of all open subsets of $A$.
+* The interior of $A$, $A^{\circ}$ consists of all points for which $A$ is a neighbourhood, i.e. $$\set{x\in T:x\in U\subset A\, \text{for some} U\in\mathcal{T}}.$$
+
+#### Relationship between closure and interior
+
+* If $A\subset T$, then $$A^{\circ} = T\setminus\overline{T\setminus A}\quad\text{and}\quad\overline{A} = T\setminus(T\setminus A)^{\circ}.$$
+
+#### Boundary
+
+* The boundary $\partial H$ of a set $H$ is the set of all points $x$ whith the property that every neighbourhood of $x$ meets both $H$ and its complement: $$\partial H = \set{x\in T: \text{if U is an open set that contains x then} U\cap H\ne\emptyset\, U\cap(T\setminus H)\ne\emptyset}.$$
+* We have $$\partial H = \overline{H}\setminus H^{\circ}.$$
+
+#### Limit point and Isolated point
+
+* Let $S\subset T$. A point $x\in T$ is a ***limit point*** of $S$ if every neighbourhood of $x$ intersects $S\setminus\set{x}$.
+* A point in $S$ that is not a limit point of $S$ is called an ***isolated point***.
+
+#### Dense, nowhere dense and meagre
+
+A subset $A$ of $T$ is 
+
+* ***dense*** in $T$ if $\overline{A} = T$;
+* ***nowhere dense*** in $T$ if $(\overline{A})^{\circ} = \emptyset$;
+* ***meagre*** in $T$ if it is a union of a countable number of nowhere dense sets.
