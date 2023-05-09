@@ -197,12 +197,12 @@ A subset of a topological space $T$ is closed if its complement is open. Using D
 
 ### Bases and sub-bases
 
-A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$, i.e. for all $U\in\mathcal{T}$, there exists $\mathcal{C}_ {U}\subset\mathcal{B}$ such that $U = \displaystyle\bigcup_{\mathbb{B}\in\mathcal{C} _{U}}\mathbb{B}$.
+A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$, i.e. for all $U\in\mathcal{T}$, there exists $\mathcal{C}_ {U}\subset\mathcal{B}$ such that $U = \displaystyle\bigcup_{B\in\mathcal{C} _ {U}}B$.
 
 If $\mathcal{B}$ is any basis for $\mathcal{T}$, then 
 
-* $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that \displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {T}}\mathbb{B} = T);
-* If $\mathbb{B}_ {1},\mathbb{B}_ {2}\in\mathcal{B}$, then $\mathbb{B}_ {1}\cap\mathbb{B}_ {2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{\mathbb{B}\in\mathcal{C}_ {\mathbb{B}_ {1}\cap\mathbb{B}_ {2}}}\mathbb{B} = \mathbb{B}_ {1}\cap\mathbb{B}_ {2}$.
+* $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that \displaystyle\bigcup_{B\in\mathcal{C}_ {T}}B = T);
+* If $B_{1},B_{2}\in\mathcal{B}$, then $B_{1}\cap B_{2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {B_{1}\cap B_{2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{B\in\mathcal{C}_ {B_{1}\cap B_{2}}}B = B_{1}\cap B_{2}$.
 
 A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
 
