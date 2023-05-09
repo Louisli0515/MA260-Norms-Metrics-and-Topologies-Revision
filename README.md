@@ -201,7 +201,7 @@ A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\s
 
 If $\mathcal{B}$ is any basis for $\mathcal{T}$, then 
 
-* $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that \displaystyle\bigcup_{B\in\mathcal{C}_ {T}}B = T);
+* $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{B\in\mathcal{C}_ {T}} B = T)$;
 * If $B_{1},B_{2}\in\mathcal{B}$, then $B_{1}\cap B_{2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {B_{1}\cap B_{2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{B\in\mathcal{C}_ {B_{1}\cap B_{2}}}B = B_{1}\cap B_{2}$.
 
 A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
