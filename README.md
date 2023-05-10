@@ -303,7 +303,8 @@ If there is a homemorphism $f:T_{1}\to T_{2}$, we say that $(T_{1},\mathcal{T}_ 
 #### Cover and subcover
 
 * A ***cover*** of a set $A$ is collection $\mathcal{U}$ of sets whose union contains $A$: $$A\subset\bigcup_{U\in\mathcal{U}} U.$$
-* A ***subcover*** of a cover $\mathcal{U}$ is a subset of $\mathcal{U}$ whose elements still cover $A$. A cover is ***open*** if all of its elements are open.
+* A ***subcover*** of a cover $\mathcal{U}$ is a subset of $\mathcal{U}$ whose elements still cover $A$. 
+* A cover is ***open*** if all of its elements are open.
 
 #### Compact
 
