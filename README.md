@@ -197,14 +197,14 @@ A subset of a topological space $T$ is closed if its complement is open. Using D
 
 ### Bases and sub-bases
 
-A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$, i.e. for all $U\in\mathcal{T}$, there exists $\mathcal{C}_ {U}\subset\mathcal{B}$ such that $U = \displaystyle\bigcup_{B\in\mathcal{C} _ {U}}B$.
+* A ***basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$, i.e. for all $U\in\mathcal{T}$, there exists $\mathcal{C}_ {U}\subset\mathcal{B}$ such that $U = \displaystyle\bigcup_{B\in\mathcal{C} _ {U}}B$.
 
 If $\mathcal{B}$ is any basis for $\mathcal{T}$, then 
 
 * $T$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {T}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{B\in\mathcal{C}_ {T}} B = T)$;
 * If $B_{1},B_{2}\in\mathcal{B}$, then $B_{1}\cap B_{2}$ is the union of some sets from $\mathcal{B}$ (i.e. there exists $\mathcal{C}_ {B_{1}\cap B_{2}}\subset\mathcal{B}$ such that $\displaystyle\bigcup_{B\in\mathcal{C}_ {B_{1}\cap B_{2}}}B = B_{1}\cap B_{2}$.
 
-A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
+* A ***sub-basis*** for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$.
 
 ### Subspaces and finite product spaces
 
@@ -279,3 +279,47 @@ A subset $A$ of $T$ is
 #### Additivity, product and division continuity
 
 * If $f,g:T\to\mathbb{R}$ are ***continuous***, then so are $f+g, fg$ and $f/g$ is ***continuous*** on the set $\set{x\in T: g(x)\ne 0}$.
+
+### The projective topology and product spaces
+
+* The ***projective topology*** on $T$ is the coarsest topology for which all the maps $f_{j}:T\to T_{j}$ are continuous.
+* Let $(T_{j},\mathcal{T}_ {j}), j\in J$ be an arbitrary collection of topological spaces. Their product $T = \displaystyle\prod_{j\in J} T_{j}$ is the set of all functions $x:J\to\displaystyle\bigcup_{j\in J} T_{j}$ such that $x(j)\in T_{j}$. The product topology $\mathcal{T}$ on $T$ is the coarsest topology for which all of the projections $$\pi_{j}: T\to T_{j}:x\mapsto x(j)$$ are continuous. We then call the topological space $(T,\mathcal{T})$ the topological product of the spaces $(T_{j},\mathcal{T}_ {j})$.
+* A sub-basis for the product topology consists of all sets of the form $$\prod_{j\in J} U_{j},$$ where $U_{j}\in\mathcal{T}_ {j}$ with $U_{j} = T_{j}$ except for a finite number of the $j$.
+
+### Homeomorphisms
+
+Let $(T_{1},\mathcal{T}_ {1})$ and $(T_{2}, \mathcal{T}_ {2})$ be topological spaces. A bijection $f: T_{1}\to T_{2}$ is a ***homeomorhpism*** if any one of the following equivalent conditions holds:
+
+* both $f$ and $f^{-1}$ are continuous;
+* $V$ is open in $T_{2}$ if and only if $f^{-1}(V)$ is open in $T_{1}$.
+* $U$ is open in $T_{1}$ if and only if $f(U)$ is open in $T_{2}$.
+
+If there is a homemorphism $f:T_{1}\to T_{2}$, we say that $(T_{1},\mathcal{T}_ {1})$ and $(T_{2},\mathcal{T}_ {2})$ are ***homeomorphic***.
+
+* A property of topological spaces is a ***topological invariant*** (or 'topological property') if it is preserved by homeomorphisms.
+
+### Compactness
+
+#### Cover and subcover
+
+* A ***cover*** of a set $A$ is collection $\mathcal{U}$ of sets whose union contains $A$: $$A\subset\bigcup_{U\in\mathcal{U}} U.$$
+* A ***subcover*** of a cover $\mathcal{U}$ is a subset of $\mathcal{U}$ whose elements still cover $A$. A cover is ***open*** if all of its elements are open.
+
+#### Compact
+
+* A topological space $T$ is ***compact*** if every open cover of $T$ has a finite subcover.
+* A subset $S$ of $T$ is ***compact*** if every open cover of $S$ by subsets of $T$ has a finite subcover. This is the same as $S$ being compact with the subspace topology.
+* If $T$ is a topological space and $S\subset T$, then $S$ is ***compact*** in the sense of definition of compact if and only if $(S,\mathcal{T}_ {S})$ is compact in the sense of definition of compact.
+
+#### Heine-Borel Theorem
+
+* Any closed interval $[a,b]$ is a ***compact subset*** of $\mathbb{R}$ (with the usual topology).
+
+### Compact vs closed
+
+* Any ***closed subset*** $S$ of a ***compact space*** $T$ is compact.
+* Any ***compact subset*** $K$ of a ***Hausdorff space*** $T$ is closed.
+* Any ***compact subset*** $K$ of a metric space $(X,d)$ is ***bounded***.
+* A subset of $\mathbb{R}$ with the usual topology is ***compact*** if and only if it is ***closed and bounded***.
+* Let $\mathcal{F}$ be a collection of non-empty closed subsets of a compact space $T$ such that every finite subcollection of $\mathcal{F}$ has a non-empty intersection. Then the intersection of all the sets from $\mathcal{F}$ is non-empty.
+* Let $F_{1}\supset F_{2}\supset F_{3}\supset...$ be non-empty closed subsets of a compact space $T$. Then $\displaystyle\bigcap_{j=1}^{\infty} F_{j}\ne\emptyset.$
