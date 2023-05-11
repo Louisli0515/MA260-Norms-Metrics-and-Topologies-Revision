@@ -1,5 +1,91 @@
 # MA260-Norms-Metrics-and-Topologies-Revision
-My own notes about the MA260 revision, mainly from the notes and example sheets
+My own notes about the MA260 Norms, Metrics and Topologies revision, mainly from the notes and example sheets.
+
+
+- [MA260-Norms-Metrics-and-Topologies-Revision](#ma260-norms-metrics-and-topologies-revision)
+  * [Lecture notes](#lecture-notes)
+  * [Example sheets](#example-sheets)
+    + [Countable](#countable)
+    + [Norms](#norms)
+      - [Standard norm/Euclidean norm](#standard-norm-euclidean-norm)
+      - [Normed space](#normed-space)
+      - [Closed unit ball](#closed-unit-ball)
+      - [Convex](#convex)
+      - [Minkowski's inequality in $\mathbb{R}^{n}$](#minkowski-s-inequality-in---mathbb-r---n--)
+        * [Equivalent norms](#equivalent-norms)
+      - [$l^{p}$ space](#-l--p---space)
+      - [Minkowski's inequality in $l^{p}$](#minkowski-s-inequality-in--l--p--)
+      - [$L^{p}$ space](#-l--p---space)
+    + [Metric space](#metric-space)
+      - [Standard metric/Euclidean metric](#standard-metric-euclidean-metric)
+      - [Discrete metric](#discrete-metric)
+      - [Sunflower metric](#sunflower-metric)
+      - [Jungle river metric](#jungle-river-metric)
+    + [Open and closed sets](#open-and-closed-sets)
+      - [Bounded subsets](#bounded-subsets)
+      - [Open and closed subsets](#open-and-closed-subsets)
+    + [Convergence of sequences](#convergence-of-sequences)
+      - [Convergence](#convergence)
+    + [Continuity](#continuity)
+      - [Continuity and open/close sets](#continuity-and-open-close-sets)
+    + [Topologically equivalence](#topologically-equivalence)
+      - [Topologically equivalent](#topologically-equivalent)
+      - [Equivalent norms](#equivalent-norms-1)
+    + [Isometries and homeomorphisms](#isometries-and-homeomorphisms)
+    + [Topological properties I](#topological-properties-i)
+    + [Topological Spaces](#topological-spaces)
+      - [Definition of a topology](#definition-of-a-topology)
+      - [Definition of finer and coarser](#definition-of-finer-and-coarser)
+      - [Closed topological space](#closed-topological-space)
+    + [Bases and sub-bases](#bases-and-sub-bases)
+    + [Subspaces and finite product spaces](#subspaces-and-finite-product-spaces)
+      - [Subspace topology](#subspace-topology)
+      - [Product topological spaces](#product-topological-spaces)
+    + [Closure, interior and boundary](#closure--interior-and-boundary)
+      - [Closure](#closure)
+      - [Interior](#interior)
+      - [Relationship between closure and interior](#relationship-between-closure-and-interior)
+      - [Boundary](#boundary)
+      - [Limit point and Isolated point](#limit-point-and-isolated-point)
+      - [Dense, nowhere dense and meagre](#dense--nowhere-dense-and-meagre)
+    + [The Hausdorff property and metrisability](#the-hausdorff-property-and-metrisability)
+    + [Continuity between topological spaces](#continuity-between-topological-spaces)
+    + [Basic properties](#basic-properties)
+      - [Transitivity of continuity](#transitivity-of-continuity)
+      - [Projection continuity](#projection-continuity)
+      - [Additivity, product and division continuity](#additivity--product-and-division-continuity)
+    + [The projective topology and product spaces](#the-projective-topology-and-product-spaces)
+    + [Homeomorphisms](#homeomorphisms)
+    + [Compactness](#compactness)
+      - [Cover and subcover](#cover-and-subcover)
+      - [Compact](#compact)
+      - [Heine-Borel Theorem](#heine-borel-theorem)
+    + [Compact vs closed](#compact-vs-closed)
+    + [Compactness of products and compact subsets of $\mathbb{R}^{n}$](#compactness-of-products-and-compact-subsets-of---mathbb-r---n--)
+      - [Tychonov's Theorem](#tychonov-s-theorem)
+      - [Heine-Borel in $\mathbb{R}^{n}$](#heine-borel-in---mathbb-r---n--)
+    + [Continuous functions on compact sets](#continuous-functions-on-compact-sets)
+      - [Semicontinuous](#semicontinuous)
+    + [Equivalence of all norms on $\mathbb{R}^{n}$](#equivalence-of-all-norms-on---mathbb-r---n--)
+    + [Lebesgue numbers and uniform continuity](#lebesgue-numbers-and-uniform-continuity)
+      - [Uniformly continuous](#uniformly-continuous)
+    + [Sequential compactness](#sequential-compactness)
+    + [Normed spaces](#normed-spaces)
+    + [Connectedness](#connectedness)
+      - [Connected/Disconnected](#connected-disconnected)
+      - [Subset connected/disconnected](#subset-connected-disconnected)
+    + [Connected subsets of $\mathbb{R}$](#connected-subsets-of---mathbb-r--)
+    + [Operations on connected sets](#operations-on-connected-sets)
+      - [Topologist sine curve](#topologist-sine-curve)
+    + [Connected components](#connected-components)
+    + [Path-connected spaces](#path-connected-spaces)
+    + [Open sets in $\mathbb{R}^{n}$](#open-sets-in---mathbb-r---n--)
+      - [Cauchy sequence](#cauchy-sequence)
+    + [Completeness](#completeness)
+      - [Examples of complete spaces](#examples-of-complete-spaces)
+    + [Completions](#completions)
+
+
 
 ## Lecture notes
 
@@ -8,6 +94,8 @@ My own notes about the MA260 revision, mainly from the notes and example sheets
 First of all, feel free to download 2022-2023 lecture notes for MA260.
 
 ## Example sheets
+
+[MA260_Norms_metrics_topologies_tutorial_sheet.pdf](https://github.com/Louisli0515/MA260-Norms-Metrics-and-Topologies-Revision/files/11456167/MA260_Norms_metrics_topologies_tutorial_sheet.pdf)
 
 For the second term revision, I will combine all the examples into one pdf, and therefore we will not use sub-headings for each week but instead just topics.
 
@@ -382,7 +470,7 @@ If there is a homemorphism $f:T_{1}\to T_{2}$, we say that $(T_{1},\mathcal{T}_ 
 
 #### Connected/Disconnected
 
-* A topological space $T$ is ***connected*** if the only partitions of $T$ into open sets are $(T,\emptysets)$ and $(\emptysets, T)$. The space $T$ is said to be ***disconected*** if it is not connected.
+* A topological space $T$ is ***connected*** if the only partitions of $T$ into open sets are $(T,\emptyset)$ and $(\emptyset, T)$. The space $T$ is said to be ***disconected*** if it is not connected.
 
 The following are equivalent:
 
@@ -402,3 +490,54 @@ The following are equivalent:
 
 * A set $I\subset\mathbb{R}$ is an ***interval*** if and only if whenever $x,y\in I$ and $x < z < y$, we have $z\in I$.
 * A subset of $\mathbb{R}$ is ***connected*** if and only if it is an interval.
+
+### Operations on connected sets
+
+* Suppose that $C_{j}, j\in\mathcal{J}$, are ***connected subsets*** of $T$ and $C_{i}\cap C_{j}\ne\emptyset$ for each $i,j$, then $$K = \bigcup_{j\in\mathcal{J}} C_{j}$$ is ***connected***.
+* Suppose that $C_{1}$ and $C_{2}$ are ***connected subsets*** of $T$ and $\overline{C}_ {1}\cap C_{2}\ne\emptyset$. Then $C_{1}\cup C_{2}$ is ***connected***.
+* If $C\subset T$ is ***connected***, then so is any set $K$ satisfying $C\subset K\subset\overline{C}$.
+* The ***continuous image*** of a ***connected set*** is connected.
+* The ***product*** of two ***connected spaces*** is ***connected***.
+
+#### Topologist sine curve
+
+* The 'topologist's sine curve' is given by $$\mathcal{F} = \set{\left(x,\sin\frac{1}{x}\right):x\in\mathbb{R},x\ne 0}\cup\set{(0,0)}$$ and it is connected.
+
+### Connected components
+
+The equivalence class of $\sim$ are called the ***connected components*** of $T$.
+
+### Path-connected spaces
+
+* If $u,v\in T$, a ***path*** from $u$ to $v$ is a ***continuous*** map $\varphi:[0,1]\to T$ such that $\varphi(0) = u$ and $\varphi(1) = v$. 
+* A space $T$ is ***path connected*** if any two points in $T$ can be joined by a path in $T$.
+* A ***path-connected*** space $T$ is ***connected***.
+
+### Open sets in $\mathbb{R}^{n}$
+
+* ***Connected open subsets*** of $\mathbb{R}^{n}$ are ***path connected***.
+* Open subsets of $\mathbb{R}^{n}$ have open connected components.
+* A subset $U$ of $\mathbb{R}$ is ***open*** if and only if it is the ***disjoint union*** of countably many open intervals, i.e. $U = \displaystyle\bigcup_{j\in\mathcal{J}}(a_{j}, b_{j})$, with the intervals ***disjoint*** and $\mathcal{J}$ ***finite*** or ***countably infinite***.
+
+#### Cauchy sequence
+
+* If a sequence $(x_{n})$ converges in a metric space $(X,d)$, then it is Cauchy, i.e. for every $\varepsilon > 0$, there exists $N$ such that $$d(x_{n},x_{m}) < \varepsilon$$ for every $n,m\geq N$.
+
+### Completeness
+
+* A metric space $(X,d)$ is ***complete*** if any Cauchy sequence in $X$ converges.
+* Suppose that $(X,d)$ is a metric space and that $S$ is a subset of $X$. If $(S,d|_ {S})$ is ***complete***, then $S$ is a ***closed subset*** of $X$, and if $(X,d)$ is ***complete*** and $S$ is ***closed***, then $(S,d|_ {S})$ is ***complete***.
+* Any ***compact metric space*** $(X,d)$ is complete.
+
+#### Examples of complete spaces
+
+* $\mathbb{R}^{d}$ is complete.
+* For every $1\leq p\leq\infty$, $l^{p}$ is ***complete***.
+* For any non-empty set $X$, the space $B(X)$ of ***bounded real-valued*** functions on $X$, $f:X\to\mathbb{R}$, with the 'sup norm' $$\left\|f\right\|_ {\infty} = \sup_{x\in X}\left|f(x)\right|$$ is ***complete***.
+* The space $C_{b}(T)$ of all ***bounded continuous functions*** from any non-empty topological space $T$ into $\mathbb{R}$ is a closed subspace of $B(T)$, and hence ***complete***.
+* If $T$ is non-empty and ***compact***, then $C(T)$ is ***complete*** with the maximum norm $$\left|f\right|_ {\infty} = \max_{x\in T}\left|f(x)\right|.$$
+
+### Completions
+
+* Any metric space $(X,d)$ can be ***isometrically embedded*** into the complete metric space $B(X)$.
+* Any metric space has a ***completion***.
