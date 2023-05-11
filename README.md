@@ -324,3 +324,39 @@ If there is a homemorphism $f:T_{1}\to T_{2}$, we say that $(T_{1},\mathcal{T}_ 
 * A subset of $\mathbb{R}$ with the usual topology is ***compact*** if and only if it is ***closed and bounded***.
 * Let $\mathcal{F}$ be a collection of non-empty closed subsets of a compact space $T$ such that every finite subcollection of $\mathcal{F}$ has a non-empty intersection. Then the intersection of all the sets from $\mathcal{F}$ is non-empty.
 * Let $F_{1}\supset F_{2}\supset F_{3}\supset...$ be non-empty closed subsets of a compact space $T$. Then $\displaystyle\bigcap_{j=1}^{\infty} F_{j}\ne\emptyset.$
+
+### Compactness of products and compact subsets of $\mathbb{R}^{n}$
+
+* If $T$ and $S$ are compact topological spaces, then $T\times S$ is compact.
+* The product of a finite numnber of compact spaces is compact.
+
+#### Tychonov's Theorem
+
+* The product of any collection of compact spaces is compact (with the product topology).
+
+#### Heine-Borel in $\mathbb{R}^{n}$
+
+* A subset of $\mathbb{R}^{n}$ is ***compact*** if and only if it is closed and bounded.
+
+### Continuous functions on compact sets
+
+* A ***continuous*** image of a compact space is compact.
+* A ***continuous bijection*** of a compact space $T$ onto a Hausdorff space $S$ is a homeomorphism.
+
+#### Semicontinuous
+
+* A function $f:T\to\mathbb{R}$ is ***lower semicontinuous*** if for every $c\in\mathbb{R}$, the set $f^{-1}(c,\infty)$ is open.
+* It is ***upper semicontinuous*** if for every $c\in\mathbb{R}$, the set $f^{-1}(-\infty.c)$ is open.
+* If $f:T\to\mathbb{R}$ is both ***upper and lower semicontinuous***, then $$f^{-1}(a,\infty)\cap f^{-1}(-\infty,b) = f^{-1}(a,b)$$ is open for every $a,b\in\mathbb{R}$, and so $f$ is continuous.
+* If $T$ is non-empty and compact and $f:T\to\mathbb{R}$ is ***lower semicontinuous*** then it is bounded below and attains its minimum.
+* If $f$ is upper semicontinuous, then it is bounded above and attains its maximum.
+* If $T$ is non-empty and compact, then a continuous function $f:T\to\mathbb{R}$ is ***bounded*** and ***attains its bounds***.
+
+### Equivalence of all norms on $\mathbb{R}^{n}$
+
+* All norms on $\mathbb{R}^{n}$ are equivalent.
+
+### Lebesgue numbers and uniform continuity
+
+* Let $\mathcal{U}$ be an open cover of a metric space $(X,d)$. A number $\delta > 0$ is called a ***Lebesgue number*** for $\mathcal{U}$ if for any $x\in X$, there exists $U\in\mathcal{U}$ such that $\mathbb{B}(x,\delta)\subset U$.
+* Every open cover $\mathcal{U}$ of a compact metric space $(X,d)$ has a ***Lebesgue number***.
