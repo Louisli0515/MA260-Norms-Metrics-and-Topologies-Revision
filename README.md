@@ -360,3 +360,45 @@ If there is a homemorphism $f:T_{1}\to T_{2}$, we say that $(T_{1},\mathcal{T}_ 
 
 * Let $\mathcal{U}$ be an open cover of a metric space $(X,d)$. A number $\delta > 0$ is called a ***Lebesgue number*** for $\mathcal{U}$ if for any $x\in X$, there exists $U\in\mathcal{U}$ such that $\mathbb{B}(x,\delta)\subset U$.
 * Every open cover $\mathcal{U}$ of a compact metric space $(X,d)$ has a ***Lebesgue number***.
+
+#### Uniformly continuous
+
+* A map $f:(X,d_{X})\to (Y, d_{Y}) is ***uniformly continuous*** if for every $\varepsilon > 0$, there exists $\delta > 0$ such that $$d_{X}(x,y) < \delta \implies d_{Y}(f(x),f(y)) < \varepsilon$$ for any $x,y\in X$.
+* A continuous map from a compact metric space into a metric space is uniformly continuous.
+
+### Sequential compactness
+
+* A subset $K$ of a metric space $(X,d)$ is ***sequentially compact*** if every sequence in $K$ has a convergent subsequence whose limit lies in $K$.
+* If $K$ is a sequentially compact subset of a metric space, then any open cover of $K$ has a ***Lebesgue number***.
+* A subset of a metric space is ***sequentially compact*** if and only if it is compact.
+
+### Normed spaces
+
+* A ***normed space*** is ***finite-dimensional*** if and only if its closed unit ball is compact.
+
+### Connectedness
+
+* We say that a pair of sets $(A,B)$ is a partition of a topological space $T$ if $T = A\cup B$ and $A\cap B = \emptyset$; and we then say that $A$ and $B$ partition $T$.
+
+#### Connected/Disconnected
+
+* A topological space $T$ is ***connected*** if the only partitions of $T$ into open sets are $(T,\emptysets)$ and $(\emptysets, T)$. The space $T$ is said to be ***disconected*** if it is not connected.
+
+The following are equivalent:
+
+* $T$ is disconnected;
+* $T$ has a partition into two ***non-empty*** open sets.
+* $T$ has a partition into two ***non-empty*** closed sets.
+* $T$ has a subset that is both open and closed and is neither $\emptyset$ nor $T$.
+* There is a continuous function from $T$ onto the two-point set $\set{0,1}$ with the ***discrete topology***.
+
+#### Subset connected/disconnected
+
+* A subset $S$ of $T$ is ***connected/disconnected*** if $(S,\mathcal{T}_ {S})$ is ***connected/disconnected***.
+* A set $S\subset T$ is separated by subsets $U,V\in\mathcal{T}$ if $$S\subset U\cup V,\quad U\cap V\cap S = \emptyset,\quad U\cap S\ne\emptyset,\quad V\cap S\ne\emptyset.$$
+* A subspace $S$ of a topological space $T$ is ***disconnected*** if and only if it is separated by some open subsets $U,V\in\mathcal{T}.$
+
+### Connected subsets of $\mathbb{R}$
+
+* A set $I\subset\mathbb{R}$ is an ***interval*** if and only if whenever $x,y\in I$ and $x < z < y$, we have $z\in I$.
+* A subset of $\mathbb{R}$ is ***connected*** if and only if it is an interval.
