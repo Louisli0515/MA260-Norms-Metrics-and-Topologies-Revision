@@ -265,7 +265,7 @@ Examples of properties that are not topological:
 #### Definition of a topology
 
 A ***topology*** $\mathcal{T}$ on a set $T$ is a collection of subsets of $T$, which we agree to call the "open sets", such that 
-* $T$ and $emptyset$ are open;
+* $T$ and $\emptyset$ are open;
 * the intersection of finitely many open sets is open; and
 * arbitrary unions of open sets are open.
 
