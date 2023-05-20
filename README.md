@@ -196,7 +196,7 @@ A metric $d$ on a set $X$ is a map $d:X\times X\to\mathbb{R}^{+}$ such that
 
 #### Convergence
 
-* A sequence $(x_{n})_{n=1}^{\infty} in $(X,d)$ converges to $x\in X$ if $$\lim_{n\to\infty} d(x_{n},x) = 0,$$ in terms of open balls this can be phrased as for every $\varepsilon > 0$ there exists $N\geq 1$ such that $$x_{n}\in\mathbb{B}(x,\varepsilon)$$ for all $n\geq N$.
+* A sequence $(x_{n})_ {n=1}^{\infty}$ in $(X,d)$ converges to $x\in X$ if $$\lim_{n\to\infty} d(x_{n},x) = 0,$$ in terms of open balls this can be phrased as for every $\varepsilon > 0$ there exists $N\geq 1$ such that $$x_{n}\in\mathbb{B}(x,\varepsilon)$$ for all $n\geq N$.
 * A subset $F$ of a metric space is closed if and only if whenever a sequence $(x_{n})_{n=1}^{\infty}$ contained in $F$ converges to some $x\in X$, it follows that $x\in F$.
 
 ### Continuity 
