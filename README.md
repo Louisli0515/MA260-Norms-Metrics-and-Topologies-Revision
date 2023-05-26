@@ -498,6 +498,7 @@ The following are equivalent:
 * If $C\subset T$ is ***connected***, then so is any set $K$ satisfying $C\subset K\subset\overline{C}$.
 * The ***continuous image*** of a ***connected set*** is connected.
 * The ***product*** of two ***connected spaces*** is ***connected***.
+* If $T$ and $S$ are ***homeomorphic*** and $T$ is ***connected***, then $S$ is ***connected***.
 
 #### Topologist sine curve
 
